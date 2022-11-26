@@ -19,7 +19,7 @@
 	<h1>Safari/WebKit CSS Filter Update Bug</h1>
 	<button aria-selected="true">🙂</button>
 	<button aria-selected="false">🙃</button>
-	<p>Open Web Inspector and watch the buttons aria-selected attributes values change while clicking them. Observe how the CSS filter [grayscale(100%) unless aria-selected is true, then 0%] is not applied consistently when the values change. Try the same in Chromium and Firefox browsers. Oddly, in Safari, display only seems to update to the correct value when window focus changes or when Web Inspector is opened or closed.</p>
+	<p>Open Web Inspector and watch the buttons aria-selected attributes values change while clicking them. Observe how the CSS filter [grayscale(100%) unless aria-selected is true, then 0%] is not applied consistently when the values change. Try the same in Chromium and Firefox browsers. Oddly, in Safari, display only seems to update to the correct value when window focus changes or when Web Inspector is opened or closed. <a href="https://github.com/rdela/safari-css-filter-update">Source code on GitHub</a></p>
 	<script type="text/javascript">
 		const buttons = document.querySelectorAll("button");
 		console.dir(buttons);
